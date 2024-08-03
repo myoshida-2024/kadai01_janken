@@ -1,0 +1,27 @@
+
+
+
+.flex-container {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: space-between; /* 子要素を均等に配置 */
+  }
+
+
+  .zoom-in-img {
+    max-width: 320px;
+    height:213px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .zoom-in-img img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1); /*初期状態のスケールを設定*/
+    transition: .3s ease-in-out; /*トランジションを追加*/
+  }
+  .zoom-in-img:hover img {
+    transform: scale(1.3); /*ホバー時にスケールを変更*/
+  }
